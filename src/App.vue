@@ -1,16 +1,16 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <header/>
-    <main/>
-    <footer/>
+    <header />
+    <main />
+    <footer />
   </div>
 </template>
 
 <script>
-import header from './components/header.vue'
-import main from './components/main.vue'
-import footer from './components/footer.vue'
+import header from './components/header.vue';
+import main from './components/main.vue';
+import footer from './components/footer.vue';
 
 
 export default {
