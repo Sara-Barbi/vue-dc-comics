@@ -1,13 +1,13 @@
 <template>
   <div class="hello">
-    <h1>HEADER</h1>
+    <img src="../assets/vue-dc-comics-1/img/dc-logo-bg.png" alt="">
     
   </div>
 </template>
 
 <script>
 export default {
-  name: 'header',
+  name: 'Header',
   
 }
 </script>
