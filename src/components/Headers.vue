@@ -7,7 +7,7 @@
       <img src="../assets/vue-dc-comics-1/img/dc-logo.png" alt="">
     </div>
     <nav>
-      <ul>
+      <ul class="">
           <li v-for="(element, index) in links" :key="index">
             <a href="#" :class="{'active': element.current}">{{element.text}}</a>
           </li>
@@ -20,7 +20,7 @@
 
 <script>
 export default {
-name: 'Header',
+name: 'Headers',
 
 
 data() {
@@ -60,7 +60,7 @@ links:[
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
-<style scoped >
+<style lang = "scss" scoped >
 .container-small{
 max-width: 1100px;
 margin: 0 auto;
