@@ -8,7 +8,7 @@
     </div>
     <nav>
       <ul class="">
-          <li v-for="(element, index) in links" :key="index" @click="element.current==true" >
+          <li v-for="(element, index) in links" :key="index" @click="element.current" >
             <a href="#" :class="{active : element.current}">{{element.text}}</a>
           </li>
       </ul>
@@ -73,7 +73,7 @@ ul {
 list-style-type: none;
 padding: 0;
   li {
-      display: inline-block;
+      display: $line;
       margin: 0 10px;
       
 
