@@ -8,8 +8,8 @@
     </div>
     <nav>
       <ul class="">
-          <li v-for="(element, index) in links" :key="index">
-            <a href="#" :class="{'active': element.current}">{{element.text}}</a>
+          <li v-for="(element, index) in links" :key="index" @click="element.current==true" >
+            <a href="#" :class="{active : element.current}">{{element.text}}</a>
           </li>
       </ul>
     </nav>
@@ -28,27 +28,27 @@ return{
 links:[
   { text: "Home",
     url: "#",
-    current:"false",
+    current: true,
   },
       
   { text: "Contattaci",
     url: "#",
-    current:"false",
+    current: false,
   },
 
   { text: "Cosa Offriamo",
     url: "#",
-    current:"false",
+    current: false,
   },
 
   { text: "I nostri prodotti",
     url: "#",
-    current:"false",
+    current: false,
   },
 
   { text: "Home",
     url: "#",
-    current:"false",
+    current: false,
   },
 ]
 }
@@ -61,10 +61,7 @@ links:[
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
 <style lang = "scss" scoped >
-.container-small{
-max-width: 1100px;
-margin: 0 auto;
-}
+
 .my-line-height{
 line-height: 70px;
 justify-content: space-between;
@@ -78,8 +75,22 @@ padding: 0;
   li {
       display: inline-block;
       margin: 0 10px;
+      
+
       a {
-          color: #42b983;
+          color: #000000;
+          text-decoration: none;
+          padding: 25px  10px;
+          font-family: 'Lucida Sans Unicode','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',  Geneva, Verdana, sans-serif ;
+          font-weight: 800;
+
+          &.active{
+                  color: rgb(32, 105, 178);
+                  border-bottom:rgb(32, 105, 178);
+                  padding: 40px,20px;
+                  border-bottom: 5px solid rgb(32, 105, 178);;
+                  }
+
         } 
     }
 }
@@ -89,7 +100,7 @@ width: 70px;
 }
 
 
-@import '../assets/style/variables.scss' 
+@import '../assets/style/variables.scss' ;
 
 </style>
 
