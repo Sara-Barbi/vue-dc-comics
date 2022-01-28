@@ -2,8 +2,8 @@
   <div class="hello">
     <div class="container-fluid acontain">
 
-      <div class="container  ">
-        <div class="row ">
+      <div class="container containeraz ">
+        <div class="row align-content-center">
           <div class="col-12  linehei">
             <h4> -->Content goes Here </h4>
           </div>
