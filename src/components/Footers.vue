@@ -13,7 +13,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style lang = "scss" scoped>
 @import '../assets/style/variables.scss' 
 
 

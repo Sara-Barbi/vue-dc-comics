@@ -1,24 +1,30 @@
 <template>
   <div class="hello">
-    <div class="container-fluid">
+    <div class="container-fluid acontain">
 
-      <div class="container">
-        <h4> -->Content goes Here </h4>
+      <div class="container  ">
+        <div class="row ">
+          <div class="col-12  linehei">
+            <h4> -->Content goes Here </h4>
+          </div>
+        </div>
       </div>
 
     </div>
-    <div class="container-fluid">
-      <div class="container">
+    <div class="container-fluid bcontain">
+      <div class="container containeraz">
+        <div class="row">
          <ul>
            <li v-for="(element, index) in aboutUs" :key="index" >
              <img :src="aboutUs[index].stemma" >
              <span>{{aboutUs[index].descrizione}}</span>
            </li>
          </ul>
+        </div>
       </div>
     </div>
 
-    <h1>MAIN</h1>
+    
   </div>
 </template>
 
@@ -63,7 +69,45 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-@import '../assets/style/variables.scss' 
+<style lang = "scss" scoped>
+.acontain{
+background-color: black;
+color: white;
+
+
+}
+.containeraz{
+  display: flex;
+  align-content: center;
+  min-height: 150px;
+}
+ul{
+  display: flex;
+  align-content: center;
+  margin: auto 0;
+  
+   li {
+    display: inline-block;
+    margin: 0 10px;
+    
+    span, img {
+      color: #fcfcfc;
+        text-decoration: none;
+        padding: 20px ;
+        font-family: 'Lucida Sans Unicode';
+        font-weight: 600;
+
+    }
+  }
+}
+
+
+.bcontain{
+  background-color: rgb(44, 188, 193);
+  
+}
+
+
+@import '../assets/style/variables.scss' ;
 
 </style>

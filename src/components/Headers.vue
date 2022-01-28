@@ -73,7 +73,7 @@ ul {
 list-style-type: none;
 padding: 0;
   li {
-      display: $line;
+      display: inline-block;
       margin: 0 10px;
       
 
