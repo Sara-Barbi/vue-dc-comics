@@ -1,6 +1,16 @@
 <template>
   <div class="hello">
-    <img src="../assets/vue-dc-comics-1/img/dc-logo-bg.png" alt="">
+    <div class="logo">
+
+      <img src="../assets/vue-dc-comics-1/img/dc-logo-bg.png" alt="">
+    </div>
+    <nav>
+      <ul>
+        <li v-for="(element, index)in links" :key="index">
+
+        </li>
+      </ul>
+    </nav>
     
   </div>
 </template>
@@ -9,6 +19,11 @@
 export default {
   name: 'Header',
   
+}
+data(){
+  navbar:[
+      
+  ]
 }
 </script>
 
