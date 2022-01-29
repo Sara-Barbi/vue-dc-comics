@@ -33,9 +33,10 @@ ul{
     margin: 0 10px;
     
     span, img {
-      color: #fcfcfc;
+        color: #fcfcfc;
         text-decoration: none;
         padding: 20px ;
+        font-size: 10px;
         font-family: 'Lucida Sans Unicode';
         font-weight: 600;
 
