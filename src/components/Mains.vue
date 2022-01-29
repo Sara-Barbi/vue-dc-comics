@@ -12,14 +12,11 @@
 
     </div>
     <div class="container-fluid bcontain">
-      <div class="container containeraz">
+      <div class="container">
         <div class="row">
-         <ul>
-           <li v-for="(element, index) in aboutUs" :key="index" >
-             <img :src="aboutUs[index].stemma" >
-             <span>{{aboutUs[index].descrizione}}</span>
-           </li>
-         </ul>
+        
+           <padreLogos/>
+         
         </div>
       </div>
     </div>
@@ -29,40 +26,17 @@
 </template>
 
 <script scope>
+import padreLogos from './slider/padreLogos.vue';
+
 export default {
   name: 'Mains',
-  data(){
-    return{
-      aboutUs:[
-        
-        {
-          stemma:"../assets/vue-dc-comics-1/img/buy-comics-digital-comics.png",
-          descrizione: "DIGITAL COMICS"
-        },
-
-        {
-          stemma:"../assets/vue-dc-comics-1/img/buy-comics-merchandise.png",
-          descrizione: "DC MERCHANDISE"
-        },  
-
-        {
-          stemma:"../assets/vue-dc-comics-1/img/buy-comics-subscriptions.png",
-          descrizione: "SUBSCRIPTION"
-        },
-         
-        {
-          stemma:"../assets/vue-dc-comics-1/img/buy-comics-digital-comics.png",
-          descrizione: "DC POWER VISA"
-        }
-        ,
-        {
-          stemma:"../assets/vue-dc-comics-1/img/buy-comics-digital-comics.png",
-          descrizione: "DIGITAL COMICS"
-        }
-      ]
-    }
+  components: {
+    padreLogos
   }
 }
+
+
+
 
 
 
@@ -70,6 +44,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang = "scss" scoped>
+@import '../assets/style/variables.scss';
+
 .acontain{
 background-color: black;
 color: white;
