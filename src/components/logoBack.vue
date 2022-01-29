@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="d-flex justify-content-end">
       <img src="../assets/vue-dc-comics-1/img/dc-logo-bg.png" alt="">
   </div>
 </template>
@@ -10,10 +10,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 img{
     position: relative;
-    float: left;
     top: -40px;
 }
 

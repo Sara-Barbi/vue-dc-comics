@@ -3,7 +3,7 @@
      <div class="container-fluid elback">
        <div class="container">
          <div class="row">
-           <div class="col-1">
+           <div class="col-1 mt-5">
               <h4>DC COMICS</h4>
               <ul>
                 <li>Lorem</li>
@@ -20,7 +20,7 @@
                 <li>Lorem</li>
               </ul>
            </div>
-           <div class="col-1">
+           <div class="col-1 mt-5">
               <h4>DC </h4>
               <ul>
                 <li>Lorem</li>
@@ -30,7 +30,7 @@
               </ul>
 
            </div>
-           <div class="col-1">
+           <div class="col-1 mt-5">
               <h4>SITES</h4>
               <ul>
                 <li>Lorem</li>
