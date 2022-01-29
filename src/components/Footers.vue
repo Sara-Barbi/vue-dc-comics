@@ -42,6 +42,9 @@
               </ul>
 
            </div>
+           <div class="col-8 " >
+             <logoBack />
+           </div>
          </div>
        </div>
      </div>
@@ -50,8 +53,14 @@
 </template>
 
 <script>
+import logoBack from '@/components/logoBack.vue'
+
 export default {
   name: 'Footers',
+  components:{
+        logoBack
+        
+    }
 
 }
 </script>
@@ -67,10 +76,13 @@ ul{
    list-style-type: none;
 }
 .elback{
-   background-image: src '../assets/style/vue-dc-comics-1/footer-bg.png';
+  background-image: url('../assets/vue-dc-comics-1/img/footer-bg.jpg');
+  background-size: cover;
+  height: 450px;
+  overflow: hidden;
 }
 
-@import '../assets/style/variables.scss' 
+@import '../assets/style/variables.scss'; 
 
 
 
