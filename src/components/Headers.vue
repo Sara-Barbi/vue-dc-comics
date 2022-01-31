@@ -8,7 +8,7 @@
     </div>
     <nav>
       <ul class="">
-          <li v-for="(element, index) in links" :key="index" @click="element.current" >
+          <li v-for="(element, index) in links" :key="index" @click="(element.current)? element.current=false : element.current=true" >
             <a href="#" :class="{active : element.current}">{{element.text}}</a>
           </li>
       </ul>
